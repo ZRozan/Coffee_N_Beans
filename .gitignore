@@ -1,0 +1,8 @@
+.vscode
+
+# tests
+test.html
+test.js
+
+# workspaces
+*.code-workspace

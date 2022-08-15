@@ -1,0 +1,111 @@
+body {
+  background-color: blanchedalmond;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+  background-color: rgb(255, 158, 122);
+  border: 5px ridge gray;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+header h1 {
+  text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
+}
+
+section {
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+ul li {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  margin: 0 auto;
+  max-width: 300px;
+  background-color: rgb(255, 82, 82);
+  border: 5px double black;
+  text-align: center;
+  font-size: xx-large;
+  box-shadow: 6px 4px rgba(0, 0, 0, 0.9);
+}
+
+.section-joke-title {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.menu-item {
+  margin-right: 20px;
+}
+
+.menu-item-name {
+  color: rgba(255, 82, 82);
+  font-size: x-large;
+  margin: -3px;
+}
+
+.menu-item-description {
+  max-width: 400px;
+  text-justify: auto;
+  text-indent: 7%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+
+.price {
+  margin-top: 20px;
+}
+
+h1,
+h2,
+h3 .price {
+  font-family: "Roboto Serif", serif;
+}
+
+/* Animation Title*/
+#animated-subtitle {
+  position: relative;
+  box-sizing: 240px 38px;
+  right: 6px;
+}
+
+#animated-coffee {
+  position: relative;
+  left: 92px;
+}
+
+.anim-text {
+  opacity: 0;
+}
+
+#beans-text {
+  position: relative;
+  right: 7px;
+}
+
+.show-anim-text {
+  text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
+}
+
+.initials{
+  color: rgb(71, 45, 6);
+}
+
+#brunch-title{
+  position: relative;
+}
