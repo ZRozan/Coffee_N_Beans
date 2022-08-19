@@ -1,40 +1,33 @@
 // Jquery
 
 // Title Name Animation
-{
-  animCoffeeReturn = function () {
-    $("#animated-coffee").animate({ left: "92px" }, 1500);
-  };
-  animCoffeeTextFades = function () {
-    $(".anim-text")
-      .animate({ opacity: "1.0" }, "slow")
-      .delay(2000)
-      .animate({ opacity: "0" }, "slow", animCoffeeReturn);
-  };
-  animCoffeeOpen = function () {
-    $("#animated-coffee")
-      .finish()
-      .animate({ left: "6px" }, 1500, animCoffeeTextFades);
-  };
+animCoffeeTitle = function () {
+  openning = $("#animated-coffee").delay(5000).animate({ left: "6px" }, 1500);
+  fadeIn = $(".anim-text").delay(6100).animate({ opacity: "1.0" }, "slow");
+  fadeOut = $(".anim-text").delay(1700).animate({ opacity: "0" }, "slow");
+  closing = $("#animated-coffee")
+    .delay(2000)
+    .animate({ left: "92px" }, 1500, animCoffeeTitle);
+};
 
-  $(function () {
-    $(".logo-title").click(animCoffeeOpen);
+// Hide Toggles
+hideMenus = function () {
+  $(".section-title").click(function () {
+    hide = "#" + $(this).attr("id") + "-hide";
+    $(hide).toggle();
   });
-}
+};
 
-// Hide Menus
-{
-  // brunch
-  $(function () {
-    $("#brunch-title").click(function () {
-      $("#brunch-hide").toggle();
-    });
+hideSubMenus = function () {
+  $(".sub-section-title-box").click(function () {
+    hide = "#" + $(this).attr("id") + "-hide";
+    $(hide).toggle();
+    $(".sub-section-title-container").toggleClass("remove-flex");
   });
+};
 
-  // lunch
-  $(function () {
-    $("#lunch-title").click(function () {
-      $("#lunch-hide").toggle();
-    });
-  });
-}
+
+// Start Functions
+$(function () {
+  $(document).ready(animCoffeeTitle).ready(hideMenus).ready(hideSubMenus);
+});
