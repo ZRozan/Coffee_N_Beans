@@ -1,158 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://code.jquery.com/color/jquery.color.plus-names-2.2.0.min.js"
-      integrity="sha256-97quMNaesEFsrV6uexbIR3+D1V1+75CVDXuLBFQ07lA="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="scripts.js"></script>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,700&display=swap"
+    rel="stylesheet" />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zephy CnB</title>
-  </head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="scripts.js"></script>
 
-  <body>
-    <header id="title-header">
-      <container id="logo-animation">
-        <h1>
-          <span class="logo-title">Zephy</span>
-          <br />
-          <container id="animated-subtitle">
-            <span class="initials" id="animated-coffee">C</span>
-            <span class="anim-text">offee</span>
-            <span class="initials">'N</span>
-            <span class="initials">B</span>
-            <span class="anim-text" id="beans-text">eans</span>
-          </container>
-        </h1>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zephy CnB</title>
+</head>
+
+<body>
+
+  <header id="title-header">
+    <container id="logo-animation">
+      <h1>
+        <span id="logo-title">Zephy</span>
+        <br />
+        <container id="animated-subtitle">
+          <span class="initials" id="animated-coffee">C</span>
+          <span class="anim-text">offee</span>
+          <span class="initials">'N F</span>
+          <span class="anim-text" id="beans-text">oods</span>
+        </container>
+      </h1>
+      <div id="horario-atendimento">
         <p>
-          De terça a domingo. <br />
-          8h~22h
+          Tuesdays to Sundays <br />
+          8 am to 10 pm
         </p>
-      </container>
-    </header>
-
-    <section class="brunch-items">
-      <h2 class="section-title" id="brunch-title">Brunch</h2>
-
-      <div id="brunch-hide">
-        <p class="section-joke-title">( Second Breakfast )</p>
-
-        <ul class="menu-brunch">
-          <li>
-            <div class="menu-item">
-              <h3 class="menu-item-name">Apple me this!</h3>
-              <p class="menu-item-description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt odit necessitatibus fugit placeat numquam minus
-                deserunt minima, provident laboriosam, at, ab nobis nemo
-                tempora! Illum provident suscipit id illo sint.
-              </p>
-            </div>
-
-            <div class="price">
-              <strong class="price"> R$34,90 </strong>
-            </div>
-          </li>
-
-          <li>
-            <div class="menu-item">
-              <h3 class="menu-item-name">Banana Split'n Run</h3>
-              <p class="menu-item-description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt odit necessitatibus fugit placeat numquam minus
-                deserunt minima, provident laboriosam, at, ab nobis nemo
-                tempora! Illum provident suscipit id illo sint.
-              </p>
-            </div>
-
-            <strong class="price"> R$34,90 </strong>
-          </li>
-
-          <li>
-            <div class="menu-item">
-              <h3 class="menu-item-name">Cinnamon Bun Boom Pow</h3>
-              <p class="menu-item-description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt odit necessitatibus fugit placeat numquam minus
-                deserunt minima, provident laboriosam, at, ab nobis nemo
-                tempora! Illum provident suscipit id illo sint.
-              </p>
-            </div>
-
-            <strong class="price"> R$34,90 </strong>
-          </li>
-        </ul>
       </div>
+    </container>
+  </header>
 
-      <br />
-    </section>
+  <section class="brunch-items">
+    <h2 class="section-title" id="brunch">Brunch</h2>
 
-    <section class="lunch-items">
-      <h2 class="section-title" id="lunch-title">Lunch</h2>
+    <div class="menu-hide" id="brunch-hide">
+      <p class="section-joke-title">( Second Breakfast )</p>
 
-      <div id="lunch-hide" style="display: none">
-        <p class="section-joke-title">( A days finnest hour )</p>
+      <ul class="menu-brunch">
+        <li>
+          <div class="menu-item">
+            <h3 class="menu-item-name">Apple me this!</h3>
+            <p class="menu-item-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt odit necessitatibus fugit placeat numquam minus
+              deserunt minima, provident laboriosam, at, ab nobis nemo
+              tempora! Illum provident suscipit id illo sint.
+            </p>
+          </div>
 
-        <ul class="menu-lunch">
-          <li>
-            <div class="menu-item">
-              <h3 class="menu-item-name">Apple me this!</h3>
-              <p class="menu-item-description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt odit necessitatibus fugit placeat numquam minus
-                deserunt minima, provident laboriosam, at, ab nobis nemo
-                tempora! Illum provident suscipit id illo sint.
-              </p>
-            </div>
-
-            <div class="price">
-              <strong class="price"> R$34,90 </strong>
-            </div>
-          </li>
-
-          <li>
-            <div class="menu-item">
-              <h3 class="menu-item-name">Banana Split'n Run</h3>
-              <p class="menu-item-description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt odit necessitatibus fugit placeat numquam minus
-                deserunt minima, provident laboriosam, at, ab nobis nemo
-                tempora! Illum provident suscipit id illo sint.
-              </p>
-            </div>
-
+          <div class="price">
             <strong class="price"> R$34,90 </strong>
-          </li>
+          </div>
+        </li>
 
-          <li>
-            <div class="menu-item">
-              <h3 class="menu-item-name">Cinnamon Bun Boom Pow</h3>
-              <p class="menu-item-description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt odit necessitatibus fugit placeat numquam minus
-                deserunt minima, provident laboriosam, at, ab nobis nemo
-                tempora! Illum provident suscipit id illo sint.
-              </p>
-            </div>
+        <li>
+          <div class="menu-item">
+            <h3 class="menu-item-name">Banana Split'n Run</h3>
+            <p class="menu-item-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt odit necessitatibus fugit placeat numquam minus
+              deserunt minima, provident laboriosam, at, ab nobis nemo
+              tempora! Illum provident suscipit id illo sint.
+            </p>
+          </div>
 
-            <strong class="price"> R$34,90 </strong>
-          </li>
-        </ul>
-      </div>
-    </section>
+          <strong class="price"> R$34,90 </strong>
+        </li>
+
+        <li>
+          <div class="menu-item">
+            <h3 class="menu-item-name">Cinnamon Bun Boom Pow</h3>
+            <p class="menu-item-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt odit necessitatibus fugit placeat numquam minus
+              deserunt minima, provident laboriosam, at, ab nobis nemo
+              tempora! Illum provident suscipit id illo sint.
+            </p>
+          </div>
+
+          <strong class="price"> R$34,90 </strong>
+        </li>
+      </ul>
+    </div>
 
     <br />
-  </body>
+  </section>
+
+  <section class="lunch-items">
+    <h2 class="section-title" id="lunch">Lunch</h2>
+
+    <div class="menu-hide" id="lunch-hide">
+      <p class="section-joke-title">( A days finnest hour )</p>
+
+      <ul class="menu-lunch">
+        <li>
+          <div class="menu-item">
+            <h3 class="menu-item-name">Apple me this!</h3>
+            <p class="menu-item-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt odit necessitatibus fugit placeat numquam minus
+              deserunt minima, provident laboriosam, at, ab nobis nemo
+              tempora! Illum provident suscipit id illo sint.
+            </p>
+          </div>
+
+          <div class="price">
+            <strong class="price"> R$34,90 </strong>
+          </div>
+        </li>
+
+        <li>
+          <div class="menu-item">
+            <h3 class="menu-item-name">Banana Split'n Run</h3>
+            <p class="menu-item-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt odit necessitatibus fugit placeat numquam minus
+              deserunt minima, provident laboriosam, at, ab nobis nemo
+              tempora! Illum provident suscipit id illo sint.
+            </p>
+          </div>
+
+          <strong class="price"> R$34,90 </strong>
+        </li>
+
+        <li>
+          <div class="menu-item">
+            <h3 class="menu-item-name">Cinnamon Bun Boom Pow</h3>
+            <p class="menu-item-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt odit necessitatibus fugit placeat numquam minus
+              deserunt minima, provident laboriosam, at, ab nobis nemo
+              tempora! Illum provident suscipit id illo sint.
+            </p>
+          </div>
+
+          <strong class="price"> R$34,90 </strong>
+        </li>
+      </ul>
+    </div>
+    <br />
+  </section>
+
+  <section class="munch-items">
+    <h2 class="section-title" id="munch">Munch</h2>
+
+    <div class="menu-hide" id="munch-hide">
+      <p class="section-joke-title">( Snack time all the time )</p>
+
+      <ul class="menu-munch">
+        <li>
+          <div class="menu-item">
+            <h3 class="menu-item-name">Apple me this!</h3>
+            <p class="menu-item-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt odit necessitatibus fugit placeat numquam minus
+              deserunt minima, provident laboriosam, at, ab nobis nemo
+              tempora! Illum provident suscipit id illo sint.
+            </p>
+          </div>
+
+          <div class="price">
+            <strong class="price"> R$34,90 </strong>
+          </div>
+        </li>
+
+        <li>
+          <div class="menu-item">
+            <h3 class="menu-item-name">Banana Split'n Run</h3>
+            <p class="menu-item-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt odit necessitatibus fugit placeat numquam minus
+              deserunt minima, provident laboriosam, at, ab nobis nemo
+              tempora! Illum provident suscipit id illo sint.
+            </p>
+          </div>
+
+          <strong class="price"> R$34,90 </strong>
+        </li>
+
+        <li>
+          <div class="menu-item">
+            <h3 class="menu-item-name">Cinnamon Bun Boom Pow</h3>
+            <p class="menu-item-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt odit necessitatibus fugit placeat numquam minus
+              deserunt minima, provident laboriosam, at, ab nobis nemo
+              tempora! Illum provident suscipit id illo sint.
+            </p>
+          </div>
+
+          <strong class="price"> R$34,90 </strong>
+        </li>
+      </ul>
+    </div>
+    <br />
+  </section>
+
+  <section class="drink-items">
+    <h2 class="section-title" id="drinks">Drinks</h2>
+    <div class="menu-hide" id="drinks-hide">
+      <p class="section-joke-title">( Quench thy thirst this instant )</p>
+
+      <div class="drink-sub-items">
+        <div class="sub-section-title-container">
+          <div class="sub-section-title-box" id="coffee">
+            <h3 class="sub-section-title">Coffee</h3>
+          </div>
+          <div class="tohide" id="coffee-hide">
+
+            asdasdasd <br />
+
+
+          </div>
+        </div>
+        <div class="sub-section-title-container">
+          <div class="sub-section-title-box" id="tea">
+            <h3 class="sub-section-title">Tea</h3>
+          </div>
+          <div class="tohide" id="tea-hide">
+
+            asdasdasd <br />
+
+
+          </div>
+        </div>
+
+        <div class="sub-section-title-container">
+          <div class="sub-section-title-box" id="coquetel">
+            <h3 class="sub-section-title">Coquetels</h3>
+          </div>
+          <div class="tohide" id="coquetel-hide">
+            BLUE - Tequila, Blue Curaçau, suco de limão e xarope de açúcar.
+            <br />
+            MORANGO - Tequila, Triple Séc, suco de limão e xarope de morango.
+          </div>
+        </div>
+
+        <div class="sub-section-title-container">
+          <div class="sub-section-title-box" id="wine">
+            <h3 class="sub-section-title">Wine</h3>
+          </div>
+          <div class="tohide" id="wine-hide">
+
+            asdasdasd <br />
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
 </html>

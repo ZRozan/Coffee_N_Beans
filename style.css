@@ -1,24 +1,42 @@
+:root {
+  --light-orange: rgb(255, 158, 122);
+  --orange: rgb(255, 96, 75);
+  --dark-orange: rgb(134, 55, 42);
+  --darker-orange: rgb(104, 30, 8);
+  --coffee: rgb(71, 42, 7);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
   background-color: blanchedalmond;
   font-family: "Roboto", sans-serif;
 }
 
 header {
-  margin: 0 auto;
+  margin: 25px auto;
+  margin-bottom: 80px;
   max-width: 500px;
   text-align: center;
-  background-color: rgb(255, 158, 122);
-  border: 5px ridge gray;
-  margin-bottom: 30px;
+  background-color: var(--light-orange);
+  border: 5px ridge var(--dark-orange);
+  border-radius: 5px;
   position: relative;
 }
 
-header h1 {
-  text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
+#logo-title {
+  font-size: 60px;
 }
 
-section {
-  margin: 0 auto;
+header h1 {
+  margin-top: 20px;
+  margin-bottom: -20px;
+  text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
+  line-height: 60px;
 }
 
 ul {
@@ -36,8 +54,9 @@ ul li {
 .section-title {
   margin: 0 auto;
   max-width: 300px;
-  background-color: rgb(255, 82, 82);
+  background-color: var(--orange);
   border: 5px double black;
+  border-radius: 5px;
   text-align: center;
   font-size: xx-large;
   box-shadow: 6px 4px rgba(0, 0, 0, 0.9);
@@ -45,7 +64,8 @@ ul li {
 
 .section-joke-title {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   font-style: italic;
 }
 
@@ -67,6 +87,13 @@ ul li {
   font-style: italic;
 }
 
+.drink-sub-items {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .price {
   margin-top: 20px;
 }
@@ -77,7 +104,64 @@ h3 .price {
   font-family: "Roboto Serif", serif;
 }
 
+.sub-section-title-box {
+  position: relative;
+  margin: 15px auto;
+  width: 150px;
+  height: 50px;
+  background-color: var(--orange);
+  border: 5px double black;
+  border-radius: 5px;
+  box-shadow: 6px 4px rgba(0, 0, 0, 0.9);
+}
+
+.sub-section-title {
+  position: relative;
+  text-align: center;
+  font-size: x-large;
+  margin: 0 auto;
+  margin-top: 6px;
+}
+
+.menu-hide {
+  display: none;
+}
+
+.tohide {
+  display: none;
+  background-color: var(--light-orange);
+  min-width: 350px;
+  max-width: 600px;
+  position: relative;
+  text-align: center;
+}
+
+.sub-section-title-container {
+  margin: 0 auto;
+  max-width: 600px;
+  flex: 50%;
+}
+
+.remove-flex {
+  flex: 100%;
+}
+
+#horario-atendimento {
+  position: relative;
+  top: 25px;
+  margin: 0 auto;
+  max-width: 190px;
+  background-color: var(--orange);
+  border: 5px solid var(--darker-orange);
+  border-radius: 20px;
+}
+
+#horario-atendimento p {
+  font-style: italic;
+}
+
 /* Animation Title*/
+
 #animated-subtitle {
   position: relative;
   box-sizing: 240px 38px;
@@ -102,10 +186,10 @@ h3 .price {
   text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
 }
 
-.initials{
-  color: rgb(71, 45, 6);
+.initials {
+  color: var(--coffee);
 }
 
-#brunch-title{
+#brunch-title {
   position: relative;
 }
