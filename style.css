@@ -39,16 +39,26 @@ header h1 {
   line-height: 60px;
 }
 
-ul {
+ul li {
   list-style: none;
+  display: flex;
+}
+
+.menu-list {
   max-width: 500px;
   margin: 0 auto;
   display: block;
 }
 
-ul li {
-  display: flex;
+.menu-list li {
   margin-bottom: 15px;
+}
+
+.sub-menu-list {
+}
+
+.sub-menu-list li {
+  margin-bottom: 10px;
 }
 
 .section-title {
@@ -69,7 +79,8 @@ ul li {
   font-style: italic;
 }
 
-.menu-item {
+.menu-item,
+.sub-menu-item {
   margin-right: 20px;
 }
 
@@ -79,11 +90,20 @@ ul li {
   margin: -3px;
 }
 
-.menu-item-description {
-  max-width: 400px;
+.sub-menu-item-name {
+  color: rgba(255, 82, 82);
+  margin: 5px;
+  text-align: left;
+}
+
+.menu-item-description, .sub-menu-item-description{
   text-justify: auto;
   text-indent: 7%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.menu-item-description {
+  max-width: 400px;
   font-style: italic;
 }
 
@@ -96,6 +116,10 @@ ul li {
 
 .price {
   margin-top: 20px;
+}
+
+.sub-price {
+  margin-top: 6px;
 }
 
 h1,
@@ -129,11 +153,11 @@ h3 .price {
 
 .tohide {
   display: none;
-  background-color: var(--light-orange);
+  background-color: lightblue; /* delete after */
   min-width: 350px;
   max-width: 600px;
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
 .sub-section-title-container {
